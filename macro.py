@@ -58,7 +58,6 @@ def macroHandler():
                 currentPosition = mouse.position
                 mouse.release(Button.right)
             else:
-                # shiftlock check
                 if is_cursor_clipped():
                     current = RECT()
                     user32.GetClipCursor(ctypes.byref(current))
